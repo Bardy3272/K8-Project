@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: flask-pod
+  labels:
+    name: flask-pod
+    app: flask-app
+    project: K8-project
+spec:
+  containers:
+    - name: flask-container
+      image: bardh3272/my-flask-app:v1.1 
+      ports:
+        - containerPort: 6000

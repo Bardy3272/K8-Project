@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-deployment
+  labels:
+    name: flask-deployment
+    app: flask-app
+    project: K8-project
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: flask-pod
+      app: flask-app
+      project: K8-project
+  template:
+    metadata:
+      labels:
+        name: flask-pod
+        app: flask-app
+        project: K8-project
+    spec:
+      containers:
+        - name: flask-container
+          image: bardh3272/my-flask-app:v1.1 
+          ports:
+            - containerPort: 6000
+          imagePullPolicy: ifNotPresent 
+    
