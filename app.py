@@ -38,7 +38,7 @@ def home():
 	</head>
 	<body>
 		<main>
-			<div class="badge">☁ Bardhi's DevOps Playground 12345</div>
+			<div class="badge">☁ Bardhi's DevOps Playground Finally</div>
 			<h1>Ship something<br>awesome.</h1>
 			<p>A tiny Flask app, ready for its next deployment. Explore the <a href="/about">about page</a> or check the <a href="/health">health endpoint</a>.</p>
 			<button onclick="document.getElementById('message').textContent = 'Nice. Now let’s build and deploy it!'">Get a little motivation</button>
