@@ -25,5 +25,5 @@ spec:
           image: bardh3272/my-flask-app:v1.1 
           ports:
             - containerPort: 6000
-          imagePullPolicy: ifNotPresent 
+          imagePullPolicy: IfNotPresent 
     
